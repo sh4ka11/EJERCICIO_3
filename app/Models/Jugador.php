@@ -7,12 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Jugador extends Model
 {
-    public function equipo ()
+    public function equipos ()
     {
         return $this->hasMany(Equipo::class);
     }
 
-    public function gol ()
+    public function gols ()
     {
         return $this->hasMany(Gol::class);
     } 
